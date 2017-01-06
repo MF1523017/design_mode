@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ed78066b-882f-457c-be4f-24c5d2c4984f" name="UMLClassDiagram1" linkedPackageId="6f1cc4bd-a275-4747-adf0-28b24fe79721" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dc294697-bf37-41bf-bd3c-ef09bf5ff6ac">
+      <profileInstance Id="5a15af65-4e93-4704-aad2-ac92756633e9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a44e3f0d-90ad-4ddc-bad8-41538d07f301">
+      <profileInstance Id="df513170-3513-4a72-bf63-b336fe6ed4fc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c64a137-767c-49df-8718-697316ad493d" name="A" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58d8fcd2-b639-4a91-b128-b85f6d0e2de0" />
+        <targetEnds>
+          <association Id="ca66be6b-c493-4439-aa10-0da0b963abfe" isDerived="false" sourceEndRoleName="A" targetEndRoleName="Value" isLeaf="false" isAbstract="false">
+            <classMoniker Id="17af4625-3815-45c7-a2f8-6829051f7818" LastKnownName="Value" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12fde677-3d3a-4f4d-9171-a4e548eced25" name="A" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36647214-04b8-49ff-a916-395efff19d31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91d21136-88ba-4142-a2e9-d0442f5affed" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="9fd935a5-34eb-4226-aa34-3ce3d9f8515c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b285f7d4-b562-4ddb-90c1-6300e4d3838c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="554cbbcd-1c5f-437b-9c32-ed571c87ad09" name="int _value" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fd9da7fc-75c8-4e68-bf9b-a852543a408b" />
+          </property>
+          <property Id="bcb5cd2a-d8f5-4a2b-99f9-109c92011929" name="vector&lt;Value*&gt; _vs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bd09c38d-1a5a-4416-8d79-de4f545a9e10" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1fe87fef-3a82-46c0-950d-ed9cf6b9e673" name="get" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87b394c4-54d3-440b-9898-675b5eff3c0d" />
+          </operation>
+          <operation Id="98438588-9a61-4917-8a88-e1e91c241205" name="set" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="389fcf04-d6e5-494d-babf-cee7b705810f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f034761c-048f-4e1f-98bc-55bf8e4a3174" name="int v" direction="In" isUnique="false">
+                  <elementDefinition Id="32d0f2df-02fd-481b-b42f-6bce8e078f0a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b22dec3e-b033-4bef-b17e-924adc174e16" name="bind" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5037f9f7-346e-4602-bac2-de1b57b0424f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5f35cfe3-dcd2-44a4-9a28-0da3b3794c00" name="Value &amp;v" direction="In" isUnique="false">
+                  <elementDefinition Id="9b1b0c0d-c282-4c42-a28f-7415602433f1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17af4625-3815-45c7-a2f8-6829051f7818" name="Value" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="deaeb720-ce95-4be3-95a3-43df355abf43" />
+        <ownedOperationsInternal>
+          <operation Id="d28e32d5-a227-4281-82e0-5c8d0b93b042" name="virtual print" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4db010ad-62ba-4427-888c-f597afc71abe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7b3faa6-c28b-4ccf-80c9-9ed3295460d1" name="int v" direction="In" isUnique="false">
+                  <elementDefinition Id="06e827d2-263e-4a22-9e37-88e111f39b64" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8f084548-ff3e-42ea-a3c6-f0a9f0f1ee72" name="B" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e922f9c3-23b1-4ec2-9834-8a2995a235dd" />
+        <generalsInternal>
+          <generalization Id="0b2130a8-ebcf-4bb1-9edc-acced51954f0" isSubstitutable="false">
+            <classMoniker Id="17af4625-3815-45c7-a2f8-6829051f7818" LastKnownName="Value" />
+            <elementDefinition Id="5f315450-4948-4271-b6f8-969273f8eb37" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="1ac41320-6ac2-4bf3-8a1a-41a1dd70f850" name="virtual print" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b3db8a01-1d4d-4d5d-aad4-1f231a79c28b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a392c9b4-4d76-4ecd-957f-fc69a1dffff1" name="int v" direction="In" isUnique="false">
+                  <elementDefinition Id="86c082cf-8816-4cce-9cfd-ee628d079d11" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="875577bc-573c-4f7f-8f5c-071e7b2de5a9" name="C" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ef7d6b3-1da8-4e16-bd09-9979b315333a" />
+        <generalsInternal>
+          <generalization Id="96097e40-887e-42e1-a770-d81960650dae" isSubstitutable="false">
+            <classMoniker Id="17af4625-3815-45c7-a2f8-6829051f7818" LastKnownName="Value" />
+            <elementDefinition Id="b4f5cda0-28dd-4ff6-8d53-b081ade09fd3" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f7884559-c7dc-40c9-986f-70ffabd173c1" name="virtual print" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="05ab3961-b357-45d9-b021-43e526863fc9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a1613b10-0e8a-4fb6-9ae0-5eafa823ffb3" name="int v" direction="In" isUnique="false">
+                  <elementDefinition Id="57568594-ce04-4565-af9f-6fb04710dbc3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5a83bcc8-20ba-4d71-b1f0-a852190de02c" name="D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="62e52218-0385-4477-a704-501245572197" />
+        <generalsInternal>
+          <generalization Id="6f837c4f-160c-4c6c-932d-d184502c40bb" isSubstitutable="false">
+            <classMoniker Id="17af4625-3815-45c7-a2f8-6829051f7818" LastKnownName="Value" />
+            <elementDefinition Id="fd7762d2-ef72-4ab8-b3c7-c7d07e7ad180" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="61c38ff0-dbb1-4cf2-adbb-7768de73da73" name="virtual print" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2cc45cb3-99a8-4085-9a23-ebefc8b3678f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4daf6408-3c1e-4614-9855-a3fff7f8ce80" name="int v" direction="In" isUnique="false">
+                  <elementDefinition Id="dd3ed076-fc37-4b69-821a-199203b5e3df" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6f1cc4bd-a275-4747-adf0-28b24fe79721" name="ModelingProject1">
+    <elementDefinition Id="1f03b590-c80f-4a13-918a-91107e87d503" />
+  </package>
+</logicalClassDesignerModel>
