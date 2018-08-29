@@ -17,4 +17,4 @@
 - 对一个抽象的实现部分的修改对客户不产生影响，即客户的代码不必重新编译
 - 对客户完全隐藏抽象的实现部分
 3. 结构
-‘![如图](E:\c++\design_mode\bridge\bridge0.png)’
+‘![如图](https://github.com/MF1523017/design_mode/blob/master/bridge/bridge0.png)’
